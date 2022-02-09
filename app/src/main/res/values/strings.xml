@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Link Bucket</string>
+    <string name="field_email_label">Email</string>
+    <string name="field_email_hint">Email Address...</string>
+    <string name="field_password_hint">Password...</string>
+    <string name="field_password_label">Password</string>
+    <string name="btn_text_login">Login</string>
 </resources>

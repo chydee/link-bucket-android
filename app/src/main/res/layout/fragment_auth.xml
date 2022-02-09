@@ -1,15 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/auth_padding_horizontal"
+    android:paddingVertical="@dimen/auth_padding_vertical"
     tools:context=".ui.user.FragmentAuth">
 
-    <TextView
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fontFamily="@font/poppins"
-        android:text="Email"
-        android:textColor="" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="@string/field_email_label"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/normal_text_size"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailAddressInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thin_margin"
+            app:boxStrokeColor="@color/gray"
+            app:boxStrokeWidth="1dp"
+            app:hintEnabled="false"
+            app:startIconDrawable="@drawable/ic_outline_email_24"
+            app:startIconTint="@color/primaryTextColor">
+
+            <EditText
+                android:id="@+id/emailAddressInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="emailAddress"
+                android:hint="@string/field_email_hint"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_spacing_margin"
+            android:fontFamily="@font/poppins"
+            android:text="@string/field_password_label"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/normal_text_size"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thin_margin"
+            app:boxStrokeColor="@color/gray"
+            app:boxStrokeWidth="1dp"
+            app:hintEnabled="false"
+            app:startIconDrawable="@drawable/ic_outline_lock_24"
+            app:startIconTint="@color/primaryTextColor">
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="emailAddress"
+                android:hint="@string/field_password_hint"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:fontFamily="@font/poppins"
+        android:minHeight="@dimen/minimum_button_height"
+        android:text="@string/btn_text_login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_text_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

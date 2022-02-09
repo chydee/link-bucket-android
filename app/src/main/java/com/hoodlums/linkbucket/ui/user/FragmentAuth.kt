@@ -7,12 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.hoodlums.linkbucket.R
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FragmentAuth : Fragment() {
 
-    companion object {
-        fun newInstance() = FragmentAuth()
-    }
 
     private lateinit var viewModel: FragmentAuthViewModel
 
@@ -23,10 +22,10 @@ class FragmentAuth : Fragment() {
         return inflater.inflate(R.layout.fragment_auth, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(FragmentAuthViewModel::class.java)
-        // TODO: Use the ViewModel
     }
+
 
 }
