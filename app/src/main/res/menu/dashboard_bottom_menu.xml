@@ -7,9 +7,9 @@
     <item
         android:id="@+id/fragmentCreate"
         android:icon="@drawable/ic_add_link"
-        android:title="Post Link" />
+        android:title="@string/menu_post_link" />
     <item
         android:id="@+id/fragmentBookmarks"
         android:icon="@drawable/ic_bookmarks"
-        android:title="Bookmarks" />
+        android:title="@string/menu_bookmarks" />
 </menu>

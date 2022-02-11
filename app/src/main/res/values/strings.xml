@@ -11,4 +11,6 @@
     <string name="drop_details">Link bucket is an opensource project. drop something for boys</string>
     <string name="btn_open_source_licenses_text">Open Source Licenses</string>
     <string name="btn_clear_cache_text">Clear Cache</string>
+    <string name="menu_post_link">Post Link</string>
+    <string name="menu_bookmarks">Bookmarks</string>
 </resources>
