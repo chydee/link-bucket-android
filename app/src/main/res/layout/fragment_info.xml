@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/app_info_horizontal_padding"
+    android:paddingVertical="@dimen/app_info_vertical_padding"
+    tools:context=".ui.FragmentInfo"
+    tools:ignore="ContentDescription">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardSponsorProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/sponsor_card_corners"
+        app:cardElevation="@dimen/sponsor_card_elevation"
+        app:contentPadding="@dimen/sponsor_card_content_padding"
+        app:strokeColor="@color/gray"
+        app:strokeWidth="@dimen/sponsor_card_stroke_width">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/heartIcon"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/donate_heart_container"
+                android:padding="8dp"
+                android:src="@drawable/ic_donate_heart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sponsorText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/regular_spacing_margin"
+                android:layout_marginEnd="@dimen/regular_spacing_margin"
+                android:fontFamily="@font/poppins"
+                android:text="@string/sponsor_boys"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/sponsorBtn"
+                app:layout_constraintStart_toEndOf="@+id/heartIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/drop_details"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/sponsorText"
+                app:layout_constraintStart_toStartOf="@+id/sponsorText"
+                app:layout_constraintTop_toBottomOf="@+id/sponsorText" />
+
+            <ImageButton
+                android:id="@+id/sponsorBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_new_tab"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOpenSourceLicense"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/regular_spacing_margin"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="start|center_vertical"
+        android:text="@string/btn_open_source_licenses_text"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryTextColor"
+        app:icon="@drawable/ic_balance"
+        app:iconPadding="8dp"
+        app:iconTint="@color/primaryTextColor" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnClearCache"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/regular_spacing_margin"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="start|center_vertical"
+        android:text="@string/btn_clear_cache_text"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryTextColor"
+        app:icon="@drawable/ic_balance"
+        app:iconPadding="8dp"
+        app:iconTint="@color/primaryTextColor" />
+</androidx.appcompat.widget.LinearLayoutCompat>

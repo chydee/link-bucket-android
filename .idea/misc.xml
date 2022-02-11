@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/donate_heart_container.xml" value="0.1965" />
         <entry key="app/src/main/res/layout/activity_account.xml" value="0.2814814814814815" />
         <entry key="app/src/main/res/layout/fragment_auth.xml" value="0.2907692307692308" />
+        <entry key="app/src/main/res/layout/fragment_info.xml" value="0.30512820512820515" />
       </map>
     </option>
   </component>

@@ -7,4 +7,10 @@
     <dimen name="thin_margin">8dp</dimen>
     <dimen name="regular_spacing_margin">16dp</dimen>
     <dimen name="minimum_button_height">60dp</dimen>
+    <dimen name="sponsor_card_corners">8dp</dimen>
+    <dimen name="app_info_horizontal_padding">16dp</dimen>
+    <dimen name="app_info_vertical_padding">16dp</dimen>
+    <dimen name="sponsor_card_elevation">7dp</dimen>
+    <dimen name="sponsor_card_stroke_width">1dp</dimen>
+    <dimen name="sponsor_card_content_padding">12dp</dimen>
 </resources>
