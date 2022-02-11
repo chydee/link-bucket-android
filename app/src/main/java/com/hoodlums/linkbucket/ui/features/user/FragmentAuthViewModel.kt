@@ -1,4 +1,4 @@
-package com.hoodlums.linkbucket.ui.user
+package com.hoodlums.linkbucket.ui.features.user
 
 import androidx.lifecycle.ViewModel
 

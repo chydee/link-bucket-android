@@ -1,4 +1,4 @@
-package com.hoodlums.linkbucket.ui
+package com.hoodlums.linkbucket.ui.features.user
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

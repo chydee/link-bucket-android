@@ -1,4 +1,4 @@
-package com.hoodlums.linkbucket.ui
+package com.hoodlums.linkbucket.ui.base
 
 import android.content.Context
 import android.content.res.Configuration

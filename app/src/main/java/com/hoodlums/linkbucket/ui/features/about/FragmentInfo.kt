@@ -1,4 +1,4 @@
-package com.hoodlums.linkbucket.ui
+package com.hoodlums.linkbucket.ui.features.about
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LinkBucket">
         <activity
-            android:name=".ui.dashboard.DashboardActivity"
+            android:name=".ui.features.dashboard.DashboardActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,17 +19,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.AccountActivity"
+            android:name=".ui.features.user.AccountActivity"
             android:exported="false" />
-        <activity
-            android:name=".ui.BaseActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

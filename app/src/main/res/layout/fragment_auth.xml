@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:paddingHorizontal="@dimen/auth_padding_horizontal"
     android:paddingVertical="@dimen/auth_padding_vertical"
-    tools:context=".ui.user.FragmentAuth">
+    tools:context=".ui.features.user.FragmentAuth">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"

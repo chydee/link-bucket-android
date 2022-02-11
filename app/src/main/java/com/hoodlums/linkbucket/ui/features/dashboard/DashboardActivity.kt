@@ -1,4 +1,4 @@
-package com.hoodlums.linkbucket.ui.dashboard
+package com.hoodlums.linkbucket.ui.features.dashboard
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
