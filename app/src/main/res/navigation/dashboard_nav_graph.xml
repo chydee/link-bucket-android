@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/dashboard_nav_graph.xml">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_nav_graph.xml"
+    app:startDestination="@id/fragmentHome">
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.hoodlums.linkbucket.ui.features.home.FragmentHome"
+        android:label="LinkBucket"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/fragmentCreate"
+        android:name="com.hoodlums.linkbucket.ui.features.create.FragmentCreate"
+        android:label="Post Link"
+        tools:layout="@layout/fragment_create" />
+    <fragment
+        android:id="@+id/fragmentBookmarks"
+        android:name="com.hoodlums.linkbucket.ui.features.bookmarks.FragmentBookmarks"
+        android:label="Bookmarks"
+        tools:layout="@layout/fragment_bookmarks" />
 </navigation>
