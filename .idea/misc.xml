@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/donate_heart_container.xml" value="0.1965" />
         <entry key="app/src/main/res/drawable/ic_link.xml" value="0.1965" />
+        <entry key="app/src/main/res/drawable/searchview_container.xml" value="0.191" />
         <entry key="app/src/main/res/layout/activity_account.xml" value="0.2814814814814815" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/fragment_auth.xml" value="0.2907692307692308" />
@@ -12,6 +13,7 @@
         <entry key="app/src/main/res/layout/fragment_create.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/fragment_info.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/item_link_object.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/menu/dashboard_bottom_menu.xml" value="0.30512820512820515" />
       </map>
     </option>

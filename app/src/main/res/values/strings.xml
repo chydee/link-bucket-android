@@ -13,4 +13,8 @@
     <string name="btn_clear_cache_text">Clear Cache</string>
     <string name="menu_post_link">Post Link</string>
     <string name="menu_bookmarks">Bookmarks</string>
+    <string name="link_preview_imageview_desc">Link Preview</string>
+    <string name="saved_text">Saved</string>
+    <string name="bookmarks_screen_label">Bookmarks</string>
+    <string name="bookmarks_search_placeholder">Search Saved Links...</string>
 </resources>
