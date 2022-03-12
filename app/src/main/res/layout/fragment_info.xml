@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:paddingHorizontal="@dimen/app_info_horizontal_padding"
     android:paddingVertical="@dimen/app_info_vertical_padding"
-    tools:context=".ui.features.about.FragmentInfo"
+    tools:context=".ui.features.user.about.FragmentInfo"
     tools:ignore="ContentDescription">
 
     <com.google.android.material.card.MaterialCardView

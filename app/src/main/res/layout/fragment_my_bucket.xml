@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/screen_default_horizontal_padding"
+    android:paddingVertical="@dimen/screen_default_vertical_padding"
+    tools:context=".ui.features.user.MyBucketFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/myBucketSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/regular_spacing_margin"
+        android:background="@drawable/searchview_container"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/default_text_size"
+        android:theme="@style/SearchViewTheme"
+        app:closeIcon="@drawable/ic_baseline_close_24"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="@string/my_bucket_search_placeholder"
+        app:searchIcon="@drawable/ic_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookmarksRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/regular_spacing_margin"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_link_object" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

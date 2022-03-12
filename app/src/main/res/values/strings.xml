@@ -15,6 +15,8 @@
     <string name="saved_text">Saved</string>
     <string name="bookmarks_screen_label">Bookmarks</string>
     <string name="bookmarks_search_placeholder">Search Saved Links…</string>
+    <string name="tags_search_placeholder">Search Tags…</string>
+    <string name="my_bucket_search_placeholder">Search My Links…</string>
     <string name="latest_label">Latest</string>
     <string name="home_search_hint">Search Links…</string>
     <string name="title_label">Title</string>
@@ -26,4 +28,12 @@
     <string name="visibility_label">Visibility</string>
     <string name="make_link_public">Make this link public</string>
     <string name="post_btn_text">Post</string>
+    <string name="account_label">Account</string>
+    <string name="user">Me</string>
+    <string name="logged_in_as_who">Logged in as dev.rubbie@gmail.com</string>
+    <string name="sign_out_text">Sign Out</string>
+    <string name="sign_in_option">Sign In</string>
+    <string name="sign_up_option">Sign Up</string>
+    <string name="interests_label">Interests</string>
+    <string name="max_interests">at most 10</string>
 </resources>

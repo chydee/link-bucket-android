@@ -5,27 +5,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.hoodlums.linkbucket.R
+import com.hoodlums.linkbucket.databinding.FragmentAccountBinding
+import com.hoodlums.linkbucket.ui.utils.autoCleared
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class FragmentAuth : Fragment() {
+class AccountFragment : Fragment() {
 
-
-    private lateinit var viewModel: FragmentAuthViewModel
+    private var binding: FragmentAccountBinding by autoCleared()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_auth, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_account, container, false).run {
+            binding = FragmentAccountBinding.bind(this)
+            this
+        }
     }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        viewModel = ViewModelProvider(this).get(FragmentAuthViewModel::class.java)
-    }
-
 
 }
