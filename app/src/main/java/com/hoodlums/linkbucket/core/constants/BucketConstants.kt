@@ -8,4 +8,6 @@ object BucketConstants {
     const val RESOURCE_NAME_STATUS_BAR = "status_bar_height"
     const val DEF_TYPE_DIMEN = "dimen"
     const val DEF_PACKAGE_ANDROID = "android"
+
+    const val AUTHORIZATION = "Authorization"
 }
