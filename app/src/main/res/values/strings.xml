@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">Link Bucket</string>
     <string name="field_email_label">Email</string>
-    <string name="field_email_hint">Email Address...</string>
-    <string name="field_password_hint">Password...</string>
+    <string name="field_email_hint">Email Address…</string>
+    <string name="field_password_hint">Password…</string>
     <string name="field_password_label">Password</string>
     <string name="btn_text_login">Login</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="sponsor_boys">Sponsor</string>
     <string name="drop_details">Link bucket is an opensource project. drop something for boys</string>
     <string name="btn_open_source_licenses_text">Open Source Licenses</string>
@@ -16,5 +14,16 @@
     <string name="link_preview_imageview_desc">Link Preview</string>
     <string name="saved_text">Saved</string>
     <string name="bookmarks_screen_label">Bookmarks</string>
-    <string name="bookmarks_search_placeholder">Search Saved Links...</string>
+    <string name="bookmarks_search_placeholder">Search Saved Links…</string>
+    <string name="latest_label">Latest</string>
+    <string name="home_search_hint">Search Links…</string>
+    <string name="title_label">Title</string>
+    <string name="link_label">Link</string>
+    <string name="tags_label">Tags</string>
+    <string name="link_hint">Link…</string>
+    <string name="title_hint">Title…</string>
+    <string name="tags_hint">Tags (comma separated)</string>
+    <string name="visibility_label">Visibility</string>
+    <string name="make_link_public">Make this link public</string>
+    <string name="post_btn_text">Post</string>
 </resources>

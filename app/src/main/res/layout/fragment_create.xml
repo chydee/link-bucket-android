@@ -1,13 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/screen_default_horizontal_padding"
     tools:context=".ui.features.create.FragmentCreate">
 
     <TextView
+        android:id="@+id/postLinkScreenLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/thin_margin"
+        android:layout_marginEnd="@dimen/thin_margin"
+        android:drawablePadding="@dimen/screen_label_drawable_padding"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/menu_post_link"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_back"
+        app:drawableTint="@color/black" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_marginTop="@dimen/regular_spacing_margin"
+        android:fillViewport="true"
+        android:scrollbars="none">
 
-</FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/screen_default_horizontal_padding"
+            android:paddingVertical="@dimen/screen_default_horizontal_padding">
+
+            <TextView
+                android:id="@+id/linkFieldLabel"
+                style="@style/CreationLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/link_label" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/linkFieldLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linkFieldLabel"
+                android:layout_marginTop="@dimen/thin_margin"
+                app:boxStrokeColor="#E0E0E0"
+                app:boxStrokeErrorColor="@color/heartRed"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/linkInput"
+                    style="@style/PostLinkInputFieldsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/link_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/titleFieldLabel"
+                style="@style/CreationLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linkFieldLayout"
+                android:layout_marginTop="@dimen/regular_spacing_margin"
+                android:text="@string/title_label" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/titleFieldLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleFieldLabel"
+                android:layout_marginTop="@dimen/thin_margin"
+                app:boxStrokeColor="#E0E0E0"
+                app:boxStrokeErrorColor="@color/heartRed"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/titleInput"
+                    style="@style/PostLinkInputFieldsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/title_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tabsFieldLabel"
+                style="@style/CreationLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleFieldLayout"
+                android:layout_marginTop="@dimen/regular_spacing_margin"
+                android:text="@string/tags_label" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tabsFieldLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tabsFieldLabel"
+                android:layout_marginTop="@dimen/thin_margin"
+                app:boxStrokeColor="#E0E0E0"
+                app:boxStrokeErrorColor="@color/heartRed"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tagsInput"
+                    style="@style/PostLinkInputFieldsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/tags_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/visibilityLabel"
+                style="@style/CreationLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tabsFieldLayout"
+                android:layout_marginTop="@dimen/regular_spacing_margin"
+                android:text="@string/visibility_label" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/visibilityCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/visibilityLabel"
+                android:checked="true"
+                android:fontFamily="@font/poppins"
+                android:text="@string/make_link_public"
+                app:buttonTint="@color/primaryColor" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/poppins_medium"
+                android:minHeight="@dimen/default_min_button_height"
+                android:text="@string/post_btn_text"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="@dimen/btn_post_corner_radius" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

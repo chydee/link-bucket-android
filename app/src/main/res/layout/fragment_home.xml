@@ -1,13 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.features.home.FragmentHome">
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/screen_default_horizontal_padding"
+    tools:context=".ui.features.home.FragmentHome"
+    tools:ignore="ContentDescription">
 
     <TextView
+        android:id="@+id/bookmarkScreenLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/regular_spacing_margin"
+        android:layout_marginEnd="@dimen/regular_spacing_margin"
+        android:drawablePadding="@dimen/screen_label_drawable_padding"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/app_name"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_link"
+        app:drawableTint="@color/primaryColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/regular_spacing_margin"
+        android:layout_marginTop="@dimen/regular_spacing_margin"
+        android:layout_marginEnd="@dimen/regular_spacing_margin"
+        android:background="@drawable/searchview_container"
+        android:elevation="@dimen/home_search_elevation"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/home_search_padding_start"
+        android:paddingEnd="@dimen/home_search_padding_end">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_search" />
+
+        <EditText
+            android:id="@+id/searchView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/thin_margin"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/home_search_hint"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:lines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/default_text_size" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/thin_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_user_avatar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/labelLatest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/regular_spacing_margin"
+        android:layout_marginTop="@dimen/thin_margin"
+        android:layout_marginEnd="@dimen/regular_spacing_margin"
+        android:drawablePadding="@dimen/latest_label_drawable_padding"
+        android:fontFamily="@font/poppins"
+        android:text="@string/latest_label"
+        android:textSize="@dimen/normal_text_size"
+        android:textStyle="normal"
+        app:drawableStartCompat="@drawable/ic_downvote"
+        app:drawableTint="@color/primaryTextColor" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_marginStart="@dimen/regular_spacing_margin"
+        android:layout_marginTop="@dimen/regular_spacing_margin"
+        android:layout_marginEnd="@dimen/regular_spacing_margin"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_link_object" />
 
-</FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
